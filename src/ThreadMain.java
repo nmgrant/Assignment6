@@ -9,6 +9,7 @@ public class ThreadMain {
         Lock lock = new ReentrantLock();
         Condition condition = lock.newCondition();
         
+        System.out.println("hi");
         
     }
 }
