@@ -12,7 +12,7 @@ public class ThreadMain {
       
       Lock lock = new ReentrantLock();
       Condition condition = lock.newCondition();
-      Thread[] threadArray = new Thread[NUM_OF_THREADS];
+      ArrayThread[] threadArray = new ArrayThread[NUM_OF_THREADS];
 
       String[] POOL = new String[110];
       String[] ARRAY= new String[100];
@@ -26,7 +26,23 @@ public class ThreadMain {
       }
       
       for (int i = 0; i < threadArray.length; i++) {
-         
+         threadArray[i] = new ArrayThread(i, lock, condition, ARRAY, POOL);
+      }
+      
+      for (ArrayThread thread : threadArray) {
+          thread.start();
+      }
+      
+      for (ArrayThread thread : threadArray) {
+          try {
+              thread.join();
+          } catch (InterruptedException ex) {
+              System.out.println(ex);
+          }
+      }
+      
+      for (ArrayThread thread : threadArray) {
+          thread.printWaitTimes();
       }
    }
 
