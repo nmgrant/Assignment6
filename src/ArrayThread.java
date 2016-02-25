@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -9,8 +10,8 @@ public class ArrayThread extends Thread {
     private final Condition condition;
     private final int NUM_OPERATIONS = 50;
     private String[] array, pool;
-    private long searchWaitTime = 0;
-    private long replaceWaitTime = 0;
+    ArrayList<Double> searchWaitTime = new ArrayList<>();
+    ArrayList<Double> replaceWaitTime = new ArrayList<>();
 
     public ArrayThread(int id, Lock lock, Condition condition, String[] array,
             String[] pool) {
@@ -34,7 +35,7 @@ public class ArrayThread extends Thread {
         long startTime = System.nanoTime();
         lock.lock();
         long endTime = System.nanoTime();
-        searchWaitTime += (endTime - startTime);
+        searchWaitTime.add((endTime - startTime) / 1000000000.000000000);
         try {
             for (int i = array.length - 1; i > 0; i--) {
                 if (array[i].equals(poolString)) {
@@ -54,7 +55,7 @@ public class ArrayThread extends Thread {
         long startTime = System.nanoTime();
         lock.lock();
         long endTime = System.nanoTime();
-        replaceWaitTime += (endTime - startTime);
+        replaceWaitTime.add((endTime - startTime) / 1000000000.000000000);
         try {
             array[index] = pool[new Random().nextInt(pool.length)];
         } finally {
@@ -69,10 +70,39 @@ public class ArrayThread extends Thread {
     }
     
     public void printWaitTimes() {
+        
+        double averageSearchTime = 0;
+        for (double searchTime : searchWaitTime) {
+            averageSearchTime += searchTime;
+        }
+        averageSearchTime = (averageSearchTime / searchWaitTime.size());
+        
+        double averageReplaceTime = 0;
+        for (double replaceTime : replaceWaitTime) {
+            averageReplaceTime += replaceTime;
+        }
+        averageReplaceTime = (averageReplaceTime / replaceWaitTime.size());
+        
+        double searchStandardDev = 0;
+        for (double searchTime : searchWaitTime) {
+            searchStandardDev += Math.pow(searchTime - averageSearchTime, 2);
+        }
+        searchStandardDev /= searchWaitTime.size();
+        searchStandardDev = Math.sqrt(searchStandardDev);
+        
+        double replaceStandardDev = 0;
+        for (double replaceTime : replaceWaitTime) {
+            replaceStandardDev += Math.pow(replaceTime - averageReplaceTime, 2);
+        }
+        replaceStandardDev /= replaceWaitTime.size();
+        replaceStandardDev = Math.sqrt(replaceStandardDev);
+        
         System.out.println("Thread " + id + ": Average search wait time: " 
-         + ((searchWaitTime / 1000000000.00000) / (long)NUM_OPERATIONS)
+         + (averageSearchTime)
          + " seconds \n Average replace wait time: "
-         + ((replaceWaitTime / 1000000000.00000) / (long)NUM_OPERATIONS)
-         + " seconds \n");
+         + (averageReplaceTime)
+         + " seconds \n Search Time Standard Deviation: "
+         + (searchStandardDev) + "\n Replace Time Standard Deviation: "
+         + (replaceStandardDev) + "\n");        
     }
 }
