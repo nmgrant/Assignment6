@@ -1,7 +1,6 @@
 
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
 public class ArrayThread extends Thread {
