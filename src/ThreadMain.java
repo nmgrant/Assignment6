@@ -10,6 +10,10 @@ public class ThreadMain {
 
       // Number of threads to be run for the main method
       final int NUM_OF_THREADS = 20;
+      
+      final int NUM_OF_POOL_STRINGS = 110;
+      
+      final int NUM_OF_ARRAY_STRINGS = 100;
       // The lock to be shared by each thread for limiting access to the 
       // ARRAY array
       Lock lock = new ReentrantLock();
@@ -17,10 +21,10 @@ public class ThreadMain {
       ArrayThread[] threadArray = new ArrayThread[NUM_OF_THREADS];
       // The randomly generated pool of strings used to populate the ARRAY
       // and generate strings to search for and replace with
-      String[] POOL = new String[110];
+      String[] POOL = new String[NUM_OF_POOL_STRINGS];
       // The array of strings used by the threads to search for and replace
       // strings
-      String[] ARRAY = new String[100];
+      String[] ARRAY = new String[NUM_OF_ARRAY_STRINGS];
 
       // Populate the POOL array with randomly generated strings
       populatePool(POOL);
@@ -42,6 +46,9 @@ public class ThreadMain {
       // Print out the average search times and standard deviation of the
       // search times for each thread
       printAllWaitTimes(threadArray);
+      
+      // Make sure that the ARRAY has been properly updated by each thread
+      checkArray(ARRAY, threadArray[new Random().nextInt(20)].getArray());
    }
 
    // Used to generate a random string of uppercase letters with length
@@ -120,6 +127,15 @@ public class ThreadMain {
          } catch (InterruptedException ex) {
             System.out.println(ex);
          }
+      }
+   }
+   
+   // Checks that the ARRAY from the main thread matches that of a random
+   // thread's array of strings
+   private static void checkArray(String[] ARRAY, String[] array) {
+      System.out.printf("%-30.30s  %-30.30s%n", "Main ARRAY", "Thread ARRAY");
+      for (int i = 0; i < ARRAY.length; i++) {
+         System.out.printf("%-30.30s  %-30.30s%n", ARRAY[i], array[i]);
       }
    }
 }

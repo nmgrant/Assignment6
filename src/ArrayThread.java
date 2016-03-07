@@ -26,10 +26,15 @@ public class ArrayThread extends Thread {
    // shared memory arrays array and pool
    public ArrayThread(int id, Lock lock, String[] array,
    String[] pool) {
-      this.id = id;
+      this.id = id + 1;
       this.lock = lock;
       this.array = array;
       this.pool = pool;
+   }
+   
+   // Return the shared string array
+   public String[] getArray() {
+      return array;
    }
 
    // Takes a randomly generated integer value and performs a task
@@ -60,6 +65,7 @@ public class ArrayThread extends Thread {
       searchWaitTimes.add((endTime - startTime) / 1000000000);
 
       try {
+         boolean found = false;
          // Iterate over the array starting at the last element
          for (int i = array.length - 1; i > 0; i--) {
 
@@ -68,9 +74,14 @@ public class ArrayThread extends Thread {
             // finding the string and break from the for loop
             if (array[i].equals(poolString)) {
                System.out.printf("Thread %d: The last occurrence of %s is"
-               + " at index %d" + "\n", (id + 1), poolString, i);
+               + " at index %d" + "\n", (id), array[i], i);
+               found = true;
                break;
             }
+         }
+         if (!found) {
+            System.out.println("Thread " + (id) + 
+             ": " + poolString + " does not exist in the array.");
          }
       } finally {
          // Unlock the shared lock
@@ -96,16 +107,21 @@ public class ArrayThread extends Thread {
       // Add the wait time in seconds to the replaceWaitTimes ArrayList
       replaceWaitTimes.add((endTime - startTime) / 1000000000);
       try {
+         
          // Generate a random string from the pool to replace the
          // ARRAY string with
          String replaceString = pool[new Random().nextInt(pool.length)];
 
          // Print out the string replacement
-         System.out.println("Thread " + (id + 1) + ": Replacing " + array[index]
-         + " with " + replaceString);
+         System.out.println("Thread " + (id) + ": Replacing " + array[index]
+         + " with " + replaceString + " at index " + index);
 
          // Replace the ARRAY string with the chosen POOL string
          array[index] = replaceString;
+         
+         System.out.println("Thread " + (id) + 
+          ": After replacing index " + index + ": array[" + index + "] = " +
+          array[index]);
       } finally {
          // Unlock the shared lock
          lock.unlock();
@@ -138,7 +154,7 @@ public class ArrayThread extends Thread {
 
       // Print out the thread's id and the average and standard deviation
       // wait times
-      System.out.println("Thread " + (id + 1) + ": Average search wait time: "
+      System.out.println("Thread " + (id) + ": Average search wait time: "
       + (averageSearchTime) + " seconds \n Average replace wait time: "
       + (averageReplaceTime) + " seconds \n Search Time Standard Deviation: "
       + (searchStandardDev) + " seconds \n Replace Time Standard Deviation: "
@@ -169,13 +185,9 @@ public class ArrayThread extends Thread {
          standardDev += Math.pow(time - avg, 2);
       }
 
-      // Divide the summation by the size of the waitTime ArrayList to find 
-      // the variance
-      standardDev /= waitTime.size();
-
       // Square the variance to give the standard deviation for the
       // values of the ArrayList
-      standardDev = Math.sqrt(standardDev);
+      standardDev = Math.sqrt(standardDev / waitTime.size());
 
       // Return the standard deviation
       return standardDev;
