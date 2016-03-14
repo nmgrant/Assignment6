@@ -1,0 +1,102 @@
+run:
+...
+Thread 1: Average search wait time: 0.028356701739130435 seconds 
+ Average replace wait time: 3.217E-6 seconds 
+ Search Time Standard Deviation: 0.18239948519534158 seconds 
+ Replace Time Standard Deviation: 8.798818102449898E-7 seconds 
+
+Thread 2: Average search wait time: 0.02601773582608696 seconds 
+ Average replace wait time: 5.75675E-6 seconds 
+ Search Time Standard Deviation: 0.17450976443517113 seconds 
+ Replace Time Standard Deviation: 5.278857848768045E-6 seconds 
+
+Thread 3: Average search wait time: 0.0017575199333333322 seconds 
+ Average replace wait time: 4.7406E-6 seconds 
+ Search Time Standard Deviation: 0.01163264617306802 seconds 
+ Replace Time Standard Deviation: 8.569773859326743E-7 seconds 
+
+Thread 4: Average search wait time: 4.078749999999998E-6 seconds 
+ Average replace wait time: 0.02473503216666667 seconds 
+ Search Time Standard Deviation: 1.3064171104285395E-5 seconds 
+ Replace Time Standard Deviation: 0.05530406458377762 seconds 
+
+Thread 5: Average search wait time: 0.003738703863636371 seconds 
+ Average replace wait time: 1.918666666666667E-6 seconds 
+ Search Time Standard Deviation: 0.024507955288708534 seconds 
+ Replace Time Standard Deviation: 6.080903624371042E-7 seconds 
+
+Thread 6: Average search wait time: 0.0038481408000000045 seconds 
+ Average replace wait time: 2.0314E-6 seconds 
+ Search Time Standard Deviation: 0.02551199713127476 seconds 
+ Replace Time Standard Deviation: 4.2848878631768176E-7 seconds 
+
+Thread 7: Average search wait time: 0.007391694302325579 seconds 
+ Average replace wait time: 1.5481428571428574E-6 seconds 
+ Search Time Standard Deviation: 0.04790041466300116 seconds 
+ Replace Time Standard Deviation: 7.860271584859845E-7 seconds 
+
+Thread 8: Average search wait time: 0.008037894979166666 seconds 
+ Average replace wait time: 8.466E-6 seconds 
+ Search Time Standard Deviation: 0.055103352348931364 seconds 
+ Replace Time Standard Deviation: 6.434E-6 seconds 
+
+Thread 9: Average search wait time: 0.009646049651162789 seconds 
+ Average replace wait time: 4.353857142857143E-6 seconds 
+ Search Time Standard Deviation: 0.06251208344958564 seconds 
+ Replace Time Standard Deviation: 8.731945461981561E-6 seconds 
+
+Thread 10: Average search wait time: 0.010498867413043478 seconds 
+ Average replace wait time: 1.6935E-6 seconds 
+ Search Time Standard Deviation: 0.07042733201688946 seconds 
+ Replace Time Standard Deviation: 5.862991983620649E-7 seconds 
+
+Thread 11: Average search wait time: 0.011960137083333327 seconds 
+ Average replace wait time: 1.016E-6 seconds 
+ Search Time Standard Deviation: 0.08199130859988335 seconds 
+ Replace Time Standard Deviation: 3.3800000000000004E-7 seconds 
+
+Thread 12: Average search wait time: 0.014015964499999993 seconds 
+ Average replace wait time: 1.5801666666666665E-6 seconds 
+ Search Time Standard Deviation: 0.09190644994656157 seconds 
+ Replace Time Standard Deviation: 7.489039583877822E-7 seconds 
+
+Thread 13: Average search wait time: 0.015716669195652167 seconds 
+ Average replace wait time: 1.0155E-6 seconds 
+ Search Time Standard Deviation: 0.10542941045387501 seconds 
+ Replace Time Standard Deviation: 7.569090103836788E-7 seconds 
+
+Thread 14: Average search wait time: 0.015605461319148927 seconds 
+ Average replace wait time: 1.3543333333333333E-6 seconds 
+ Search Time Standard Deviation: 0.10584009027434721 seconds 
+ Replace Time Standard Deviation: 9.578939862473761E-7 seconds 
+
+Thread 15: Average search wait time: 0.017443110127659568 seconds 
+ Average replace wait time: 1.3543333333333333E-6 seconds 
+ Search Time Standard Deviation: 0.11830432990877088 seconds 
+ Replace Time Standard Deviation: 5.52359987286874E-7 seconds 
+
+Thread 16: Average search wait time: 0.017629122893617007 seconds 
+ Average replace wait time: 9.707E-6 seconds 
+ Search Time Standard Deviation: 0.11956293414798515 seconds 
+ Replace Time Standard Deviation: 7.19553769128247E-6 seconds 
+
+Thread 17: Average search wait time: 0.019436607124999988 seconds 
+ Average replace wait time: 2.0319999999999998E-6 seconds 
+ Search Time Standard Deviation: 0.13324780056112087 seconds 
+ Replace Time Standard Deviation: 6.769999999999999E-7 seconds 
+
+Thread 18: Average search wait time: 4.5144444444444454E-7 seconds 
+ Average replace wait time: 0.190267398 seconds 
+ Search Time Standard Deviation: 1.1058312420086843E-6 seconds 
+ Replace Time Standard Deviation: 0.3805253145364054 seconds 
+
+Thread 19: Average search wait time: 2.944565217391304E-7 seconds 
+ Average replace wait time: 0.24151864850000002 seconds 
+ Search Time Standard Deviation: 3.3573221125602204E-7 seconds 
+ Replace Time Standard Deviation: 0.41831865978408683 seconds 
+
+Thread 20: Average search wait time: 0.029216852833333334 seconds 
+ Average replace wait time: 6.77375E-7 seconds 
+ Search Time Standard Deviation: 0.18707818632740392 seconds 
+ Replace Time Standard Deviation: 5.865880022426302E-7 seconds 
+

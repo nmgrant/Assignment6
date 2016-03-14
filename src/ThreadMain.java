@@ -39,16 +39,6 @@ public class ThreadMain {
 
       // Start each thread in the thread array
       startThreads(threadArray);
-
-      // Wait until all threads have finished by joining on each one
-      waitForThreads(threadArray);
-
-      // Print out the average search times and standard deviation of the
-      // search times for each thread
-      printAllWaitTimes(threadArray);
-      
-      // Make sure that the ARRAY has been properly updated by each thread
-      checkArray(ARRAY, threadArray[new Random().nextInt(20)].getArray());
    }
 
    // Used to generate a random string of uppercase letters with length
