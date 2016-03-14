@@ -98,34 +98,4 @@ public class ThreadMain {
          thread.start();
       }
    }
-
-   // Prints the wait time statistics for each thread in the threadArray
-   public static void printAllWaitTimes(ArrayThread[] threadArray) {
-      // Print an empty line for formatting purposes
-      System.out.println();
-
-      for (ArrayThread thread : threadArray) {
-         thread.printWaitTimes();
-      }
-   }
-
-   // Pauses execution of the main thread until all other threads have finished
-   public static void waitForThreads(ArrayThread[] threadArray) {
-      for (ArrayThread thread : threadArray) {
-         try {
-            thread.join();
-         } catch (InterruptedException ex) {
-            System.out.println(ex);
-         }
-      }
-   }
-   
-   // Checks that the ARRAY from the main thread matches that of a random
-   // thread's array of strings
-   private static void checkArray(String[] ARRAY, String[] array) {
-      System.out.printf("%-30.30s  %-30.30s%n", "Main ARRAY", "Thread ARRAY");
-      for (int i = 0; i < ARRAY.length; i++) {
-         System.out.printf("%-30.30s  %-30.30s%n", ARRAY[i], array[i]);
-      }
-   }
 }
