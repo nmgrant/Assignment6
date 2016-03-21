@@ -67,7 +67,7 @@ public class ArrayThread extends Thread {
       try {
          // Iterate over the array starting at the last element
          for (int i = array.length - 1; i > 0; i--) {
-
+            
             // First occurrence of the string in reverse-order iteration
             // is the last occurrence of the string. 
             if (array[i].equals(poolString)) {

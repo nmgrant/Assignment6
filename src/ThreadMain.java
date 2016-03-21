@@ -1,7 +1,29 @@
+/**
+ * Evan McNaughtan and Nicholas Grant
+ * March 21, 2016
+ * CECS 327 (MW 10:00)
+ * Assignment #6
+ * evan4james@yahoo.com
+ * ngrant40@gmail.com
+ * 
+ * This program is an exercise in utilizing locks to ensure only one process
+ * enters a critical section at any given time. The critical section in this 
+ * program involves accessing a shared memory array. Each thread can either 
+ * search for a string within the array or replace a string. Therefore, in order
+ * to ensure that the shared memory array is properly synchronized between all 
+ * threads, a lock mechanism is used to ensure mutual exclusion. This 
+ * implementation uses coarse-grained synchronization, that is the entire array 
+ * is locked when a thread wishes to access it. Wait time data for both 
+ * searching and replacing is measured for each thread operation. In addition, 
+ * average wait time and standard deviation for both searching and replacing is 
+ * calculated and displayed. A criticism of this implementation is that the 
+ * coarse-grained synchronization may result in higher wait times on average as 
+ * a bottleneck is created. To fix this, fine-grained synchronization or an 
+ * optimistic locking mechanism could be used instead.
+ */
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
 import java.util.Random;
 
 public class ThreadMain {
