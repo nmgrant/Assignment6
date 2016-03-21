@@ -127,8 +127,10 @@ public class ArrayThread extends Thread {
    public void printWaitTimes() {
       
       // Remove first wait times for more accurate results
-      searchWaitTimes.remove(0);
-      replaceWaitTimes.remove(0);
+      if (!searchWaitTimes.isEmpty()) 
+         searchWaitTimes.remove(0);
+      if (!replaceWaitTimes.isEmpty())
+         replaceWaitTimes.remove(0);
       
       // Average the search and replace wait time ArrayLists
       double averageSearchTime = average(searchWaitTimes);
