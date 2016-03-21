@@ -1,102 +1,102 @@
 run:
-Thread 2: Average search wait time: 780.3260869565217 nanoseconds 
+Thread 2: Average search wait time: 603.7391304347826 nanoseconds 
+ Average replace wait time: 677.5 nanoseconds 
+ Search Time Standard Deviation: 253.78794938179743 nanoseconds 
+ Replace Time Standard Deviation: 0.5 nanoseconds 
+
+Thread 4: Average search wait time: 554.1363636363636 nanoseconds 
+ Average replace wait time: 677.5 nanoseconds 
+ Search Time Standard Deviation: 545.4866297382003 nanoseconds 
+ Replace Time Standard Deviation: 0.5 nanoseconds 
+
+Thread 5: Average search wait time: 425.25581395348837 nanoseconds 
+ Average replace wait time: 677.2 nanoseconds 
+ Search Time Standard Deviation: 358.4901213664899 nanoseconds 
+ Replace Time Standard Deviation: 0.4 nanoseconds 
+
+Thread 3: Average search wait time: 706.5869565217391 nanoseconds 
+ Average replace wait time: 1016.0 nanoseconds 
+ Search Time Standard Deviation: 445.5182900694307 nanoseconds 
+ Replace Time Standard Deviation: 339.0 nanoseconds 
+
+Thread 1: Average search wait time: 1836.1555555555556 nanoseconds 
+ Average replace wait time: 3611.6666666666665 nanoseconds 
+ Search Time Standard Deviation: 6336.49144402854 nanoseconds 
+ Replace Time Standard Deviation: 1942.0718032268758 nanoseconds 
+
+Thread 6: Average search wait time: 2659.4634146341464 nanoseconds 
+ Average replace wait time: 677.2857142857143 nanoseconds 
+ Search Time Standard Deviation: 14897.578423448836 nanoseconds 
+ Replace Time Standard Deviation: 361.8720035299436 nanoseconds 
+
+Thread 7: Average search wait time: 246.27272727272728 nanoseconds 
+ Average replace wait time: 338.5 nanoseconds 
+ Search Time Standard Deviation: 325.7883001719455 nanoseconds 
+ Replace Time Standard Deviation: 338.5 nanoseconds 
+
+Thread 8: Average search wait time: 518.7234042553191 nanoseconds 
  Average replace wait time: 677.0 nanoseconds 
- Search Time Standard Deviation: 892.7319587586388 nanoseconds 
+ Search Time Standard Deviation: 2338.615235853716 nanoseconds 
  Replace Time Standard Deviation: 0.0 nanoseconds 
 
-Thread 1: Average search wait time: 1535.088888888889 nanoseconds 
- Average replace wait time: 541.6 nanoseconds 
- Search Time Standard Deviation: 6012.695039376531 nanoseconds 
- Replace Time Standard Deviation: 270.79999999999995 nanoseconds 
-
-Thread 5: Average search wait time: 44587.836734693876 nanoseconds 
- Average replace wait time: 2709.0 nanoseconds 
- Search Time Standard Deviation: 301780.50139013206 nanoseconds 
+Thread 9: Average search wait time: 14.404255319148936 nanoseconds 
+ Average replace wait time: 678.0 nanoseconds 
+ Search Time Standard Deviation: 97.69441273565549 nanoseconds 
  Replace Time Standard Deviation: 0.0 nanoseconds 
 
-Thread 4: Average search wait time: 7046.170212765957 nanoseconds 
- Average replace wait time: 1355.0 nanoseconds 
- Search Time Standard Deviation: 43399.78128502551 nanoseconds 
- Replace Time Standard Deviation: 552.7681852880705 nanoseconds 
-
-Thread 3: Average search wait time: 299058.1111111111 nanoseconds 
- Average replace wait time: 948.2 nanoseconds 
- Search Time Standard Deviation: 1969143.7243598073 nanoseconds 
- Replace Time Standard Deviation: 541.9001384019015 nanoseconds 
-
-Thread 6: Average search wait time: 33677.75 nanoseconds 
- Average replace wait time: 564.5 nanoseconds 
- Search Time Standard Deviation: 177170.90553154974 nanoseconds 
- Replace Time Standard Deviation: 722.850318761314 nanoseconds 
-
-Thread 8: Average search wait time: 73.6086956521739 nanoseconds 
- Average replace wait time: 846.25 nanoseconds 
- Search Time Standard Deviation: 210.78326786379918 nanoseconds 
- Replace Time Standard Deviation: 737.743646194259 nanoseconds 
-
-Thread 10: Average search wait time: 73.6086956521739 nanoseconds 
- Average replace wait time: 846.5 nanoseconds 
- Search Time Standard Deviation: 253.68668439125665 nanoseconds 
- Replace Time Standard Deviation: 1110.26584654307 nanoseconds 
-
-Thread 13: Average search wait time: 55.265306122448976 nanoseconds 
- Average replace wait time: 2709.0 nanoseconds 
- Search Time Standard Deviation: 185.36547193069708 nanoseconds 
- Replace Time Standard Deviation: 0.0 nanoseconds 
-
-Thread 14: Average search wait time: 60.17777777777778 nanoseconds 
- Average replace wait time: 541.8 nanoseconds 
- Search Time Standard Deviation: 192.66289372186847 nanoseconds 
- Replace Time Standard Deviation: 789.8881946199728 nanoseconds 
-
-Thread 16: Average search wait time: 105.35555555555555 nanoseconds 
- Average replace wait time: 812.4 nanoseconds 
- Search Time Standard Deviation: 245.47108049223377 nanoseconds 
- Replace Time Standard Deviation: 663.3218223456846 nanoseconds 
-
-Thread 17: Average search wait time: 98.75 nanoseconds 
- Average replace wait time: 677.0 nanoseconds 
- Search Time Standard Deviation: 238.99019331344957 nanoseconds 
- Replace Time Standard Deviation: 677.0 nanoseconds 
-
-Thread 19: Average search wait time: 302.59574468085106 nanoseconds 
- Average replace wait time: 1129.3333333333333 nanoseconds 
- Search Time Standard Deviation: 1098.344317977271 nanoseconds 
+Thread 10: Average search wait time: 60.2 nanoseconds 
+ Average replace wait time: 225.66666666666666 nanoseconds 
+ Search Time Standard Deviation: 192.73408278419956 nanoseconds 
  Replace Time Standard Deviation: 319.14086057552845 nanoseconds 
 
-Thread 20: Average search wait time: 76.95454545454545 nanoseconds 
- Average replace wait time: 451.5 nanoseconds 
- Search Time Standard Deviation: 214.9223913358508 nanoseconds 
- Replace Time Standard Deviation: 748.8034343760272 nanoseconds 
+Thread 12: Average search wait time: 75.24444444444444 nanoseconds 
+ Average replace wait time: 225.66666666666666 nanoseconds 
+ Search Time Standard Deviation: 212.82346941961663 nanoseconds 
+ Replace Time Standard Deviation: 319.14086057552845 nanoseconds 
 
-Thread 7: Average search wait time: 132.54347826086956 nanoseconds 
- Average replace wait time: 846.75 nanoseconds 
- Search Time Standard Deviation: 303.61142976435195 nanoseconds 
- Replace Time Standard Deviation: 738.087858930087 nanoseconds 
+Thread 15: Average search wait time: 430.97727272727275 nanoseconds 
+ Average replace wait time: 169.5 nanoseconds 
+ Search Time Standard Deviation: 1164.911477101789 nanoseconds 
+ Replace Time Standard Deviation: 293.5826118829247 nanoseconds 
 
-Thread 9: Average search wait time: 135.42222222222222 nanoseconds 
- Average replace wait time: 677.2 nanoseconds 
- Search Time Standard Deviation: 270.8444809101826 nanoseconds 
- Replace Time Standard Deviation: 741.6164507344749 nanoseconds 
+Thread 17: Average search wait time: 60.2 nanoseconds 
+ Average replace wait time: 0.0 nanoseconds 
+ Search Time Standard Deviation: 192.73408278419953 nanoseconds 
+ Replace Time Standard Deviation: 0.0 nanoseconds 
 
-Thread 12: Average search wait time: 105.33333333333333 nanoseconds 
- Average replace wait time: 677.2 nanoseconds 
- Search Time Standard Deviation: 245.4192784241331 nanoseconds 
- Replace Time Standard Deviation: 605.7509059010973 nanoseconds 
+Thread 16: Average search wait time: 1151.3 nanoseconds 
+ Average replace wait time: 25989.25 nanoseconds 
+ Search Time Standard Deviation: 6435.975711576298 nanoseconds 
+ Replace Time Standard Deviation: 56051.21176154446 nanoseconds 
 
-Thread 18: Average search wait time: 90.31111111111112 nanoseconds 
- Average replace wait time: 677.0 nanoseconds 
- Search Time Standard Deviation: 270.9518876702995 nanoseconds 
- Replace Time Standard Deviation: 741.6163428619949 nanoseconds 
+Thread 19: Average search wait time: 80.66666666666667 nanoseconds 
+ Average replace wait time: 0.0 nanoseconds 
+ Search Time Standard Deviation: 219.43712264257093 nanoseconds 
+ Replace Time Standard Deviation: 0.0 nanoseconds 
 
-Thread 11: Average search wait time: 2878.2916666666665 nanoseconds 
- Average replace wait time: 1355.0 nanoseconds 
- Search Time Standard Deviation: 19042.66775007984 nanoseconds 
- Replace Time Standard Deviation: 677.0 nanoseconds 
+Thread 20: Average search wait time: 61.61363636363637 nanoseconds 
+ Average replace wait time: 338.5 nanoseconds 
+ Search Time Standard Deviation: 194.83946957677406 nanoseconds 
+ Replace Time Standard Deviation: 338.5 nanoseconds 
 
-Thread 15: Average search wait time: 39707.391304347824 nanoseconds 
- Average replace wait time: 846.75 nanoseconds 
- Search Time Standard Deviation: 265557.7342333514 nanoseconds 
- Replace Time Standard Deviation: 738.087858930087 nanoseconds 
+Thread 11: Average search wait time: 1550.1777777777777 nanoseconds 
+ Average replace wait time: 225.66666666666666 nanoseconds 
+ Search Time Standard Deviation: 9876.04624958545 nanoseconds 
+ Replace Time Standard Deviation: 319.14086057552845 nanoseconds 
+
+Thread 18: Average search wait time: 52.07692307692308 nanoseconds 
+ Average replace wait time: 301.0 nanoseconds 
+ Search Time Standard Deviation: 180.39975334217394 nanoseconds 
+ Replace Time Standard Deviation: 336.52835442698336 nanoseconds 
+
+Thread 14: Average search wait time: 150.51111111111112 nanoseconds 
+ Average replace wait time: 225.66666666666666 nanoseconds 
+ Search Time Standard Deviation: 281.5805882057942 nanoseconds 
+ Replace Time Standard Deviation: 319.14086057552845 nanoseconds 
+
+Thread 13: Average search wait time: 16.925 nanoseconds 
+ Average replace wait time: 58074.125 nanoseconds 
+ Search Time Standard Deviation: 105.6965911228929 nanoseconds 
+ Replace Time Standard Deviation: 153393.9704767087 nanoseconds 
 
 BUILD SUCCESSFUL (total time: 0 seconds)

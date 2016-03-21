@@ -18,8 +18,9 @@
  * average wait time and standard deviation for both searching and replacing is 
  * calculated and displayed. A criticism of this implementation is that the 
  * coarse-grained synchronization may result in higher wait times on average as 
- * a bottleneck is created. To fix this, fine-grained synchronization or an 
- * optimistic locking mechanism could be used instead.
+ * a bottleneck is created when multiple threads try to access the shared
+ * memory array. Additionally, the nature of the scheduler might make other 
+ * threads wait longer on average compared to other threads.
  */
 
 import java.util.concurrent.locks.Lock;
