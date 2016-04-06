@@ -30,7 +30,6 @@ import java.util.Random;
 public class ThreadMain {
 
    public static void main(String[] args) {
-
       // Number of threads to be run for the main method
       final int NUM_OF_THREADS = 20;
       
